@@ -2,19 +2,43 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
+* {
+    box-sizing:border-box;
+}
+
 @keyframes glide {
     from {background-position:0 0;}
     to {background-position:500px 275px;}
 }
 
 body {
-  background-color:#CFA0FF;
-  background-image:url("../images/dinos.png");
-  background-size:100px;
-  color:black;
-  font-family:"comic sans ms", "chalkboard se", "comic neue", sans-serif;
-  text-align:center;
-  animation:glide 30s linear infinite;
+    background-color:#df80ff;
+    color:#000;
+    font-family:"comic sans ms", "chalkboard se", "comic neue", sans-serif;
+    text-align:center;
+}
+
+#bg {
+    overflow:auto;
+    position:absolute;
+    background-color:rgba(0,0,0,0);
+    border:none;
+}
+
+#bg::before {
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:-1;
+    display:block;
+    background-image:url("../images/dinos.png");
+    background-size:100px;
+    width:100%;
+    height:100%;
+    filter:opacity(50%);
+    animation:glide 30s linear infinite;
 }
 
 iframe {
@@ -34,8 +58,8 @@ img {
 }
 
 div {
- background-color:#987ecc;
- border:solid 5px #505;
+ background-color:#bf80ff;
+ border:solid 5px #800080;
  border-radius:10px;
  max-width:500px;
  margin:auto;
@@ -44,25 +68,25 @@ div {
 }
 
 .str0 {
-    text-shadow: 2px 2px #000,
-    -2px -2px #000,
-    -2px 2px #000,
-    2px -2px #000,
-    2px 0px #000,
-    -2px 0px #000,
-    0px 2px #000,
-    0px -2px #000;
+    text-shadow: 2px 2px 2px #000,
+    -2px -2px 2px #000,
+    -2px 2px 2px #000,
+    2px -2px 2px #000,
+    2px 0px 2px #000,
+    -2px 0px 2px #000,
+    0px 2px 2px #000,
+    0px -2px 2px #000;
 }
 
 .str1 {
-    text-shadow: 2px 2px #fff,
-    -2px -2px #fff,
-    -2px 2px #fff,
-    2px -2px #fff,
-    2px 0px #fff,
-    -2px 0px #fff,
-    0px 2px #fff,
-    0px -2px #fff;
+    text-shadow: 2px 2px 2px #fff,
+    -2px -2px 2px #fff,
+    -2px 2px 2px #fff,
+    2px -2px 2px #fff,
+    2px 0px 2px #fff,
+    -2px 0px 2px #fff,
+    0px 2px 2px #fff,
+    0px -2px 2px #fff;
 }
 
 .btn {
@@ -71,7 +95,6 @@ div {
     display:block;
     float:left;
     height:100%;
-    margin:0 20px 0 0;
 }
 
 .btn:hover {
@@ -79,26 +102,21 @@ div {
 }
 
 .btn div {
-    font-size:20px;
+    font-size:18px;
     color:#fff;
-    background-image:linear-gradient(#fff,#505);
+    background-image:linear-gradient(#bf00ff,#800080);
     border:none;
-    border-radius:4px;
+    border-radius:0;
     width:100px;
     height:100%;
     margin:0;
     display:table;
     padding:10px;
-    z-index:-1;
 }
 
 .btn div:hover {
-    background-image:linear-gradient(#505,#fff);
-    border:solid 2px #505;
-    border-radius:0;
-    width:96px;
-    padding:10px;
-    z-index:1;
+    background-image:linear-gradient(#800080,#bf00ff);
+    border:solid 2px #800080;
 }
 
 .btn p {
@@ -107,17 +125,17 @@ div {
 }
 
 a:link {
- color:#00f;
+ color:#0ff;
  text-decoration:none;
 }
 
 a:visited {
- color:#00f;
+ color:#0ff;
  text-decoration:none;
 }
 
 a:hover {
- color:#00f;
+ color:#0ff;
  text-decoration:underline;
 }
 
