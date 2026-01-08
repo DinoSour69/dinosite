@@ -36,5 +36,6 @@ Repo is distributed under the **GPL v3.0** Open Source License. check it out [he
     - [ ] navlinkads
 - ### Features
   - [ ] RSS Feed for blogposts
+  - [ ] clean up all the code ever forever
  
   ok i cant think of anything else. thats it. THATS IT.
