@@ -37,5 +37,6 @@ Repo is distributed under the **GPL v3.0** Open Source License. check it out [he
 - ### Features
   - [ ] RSS Feed for blogposts
   - [ ] clean up all the code ever forever
+  - [ ] compatibility with New 3DS (as much as possible)
  
   ok i cant think of anything else. thats it. THATS IT.
